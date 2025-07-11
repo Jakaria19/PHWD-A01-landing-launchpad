@@ -17,10 +17,6 @@
 
 /* shared styles */
 
-/* .primary-color {
-  color: #4e47ff;
-} */
-
 .btn {
   background-color: #4e47ff;
   color: white;
@@ -37,6 +33,7 @@
   border: 1px solid #4e47ff;
   cursor: pointer;
   font-size: 1.25em;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
 }
 
 /* header styles */
@@ -73,30 +70,32 @@ nav {
   margin-bottom: 35px;
 }
 
+/* main styles */
+
 /* action styles */
 
 .action {
   display: flex;
+  justify-content: center;
   align-items: center;
   margin: 100px 150px;
   gap: 220px;
 }
 
-.action-title {
+.action-text h4 {
   font-size: 42px;
   font-weight: 700;
   margin-bottom: 20px;
 }
 
-.action-description {
+.action-text p {
   font-size: 24px;
   font-weight: 200;
   margin-bottom: 20px;
 }
 
-.webflow {
+.action-img {
   border-radius: 50px;
-  height: 330px;
   width: 400px;
 }
 
@@ -134,25 +133,22 @@ nav {
 
 /* users styles */
 
-.users {
-  text-align: center;
-}
-
-.users h3 {
+.users-title {
   font-size: 42px;
+  text-align: center;
   font-weight: 700;
   margin-bottom: 50px;
 }
 
 .card-container {
   display: flex;
+  justify-content: center;
   margin: 0px 150px;
   gap: 20px;
 }
 
 .card {
   padding: 25px;
-  text-align: left;
   border: 0.5px solid rgba(78, 71, 255, 0.1);
   border-radius: 15px;
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
@@ -173,17 +169,17 @@ nav {
   gap: 10px;
 }
 
-.avatar {
+.reviewer img {
   border-radius: 50%;
   width: 40px;
 }
 
-.reviewer-name {
+.reviewer h6 {
   color: #757575;
   font-size: 16px;
 }
 
-.date {
+.reviewer p {
   color: #b3b3b3;
   font-size: 16px;
 }
@@ -191,7 +187,6 @@ nav {
 /* focus styles */
 
 .focus {
-  display: block;
   margin: 120px 150px;
   padding: 70px 150px;
   text-align: center;
@@ -210,7 +205,7 @@ nav {
 
 .focus img {
   border-radius: 50px;
-  margin: 20px auto;
+  margin: 20px;
 }
 
 /* touch styles */
@@ -225,35 +220,29 @@ nav {
   background-color: rgba(255, 255, 255, 0.5);
 }
 
-.touch-text {
+.touch-title {
   font-size: 97px;
   font-weight: 700;
 }
 
-.form-text {
+.touch-form {
   font-size: 20px;
   font-weight: 500;
 }
 
-.form-text input {
+.touch-form input,
+textarea {
+  font-size: 20px;
   padding: 20px 32px;
   border: 0.5px solid rgba(78, 71, 255, 0.25);
   border-radius: 10px;
   width: 500px;
   margin-bottom: 20px;
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+  font-family: "Inter", sans-serif;
 }
 
-.form-text textarea {
-  padding: 20px 32px;
-  border: 0.5px solid rgba(78, 71, 255, 0.25);
-  border-radius: 10px;
-  width: 500px;
-  margin-bottom: 20px;
-  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
-}
-
-.form-text button {
+.touch-form button {
   width: 575px;
   padding: 20px 100px;
 }
@@ -262,8 +251,6 @@ input::placeholder,
 textarea::placeholder {
   font-size: 20px;
   font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
 }
 
 /* footer styles */
@@ -271,6 +258,7 @@ textarea::placeholder {
 footer {
   text-align: center;
   margin: 100px 400px;
+  font-size: 20px;
 }
 
 footer h1 {
@@ -281,10 +269,6 @@ footer h1 {
 
 footer p {
   margin: 10px 0px 20px;
-}
-
-.footer-text {
-  font-size: 20px;
   color: #757575;
 }
 
