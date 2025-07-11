@@ -186,13 +186,38 @@ nav {
   font-size: 16px;
 }
 
+/* focus styles */
+
+.focus {
+  display: block;
+  margin: 120px 150px;
+  padding: 70px 150px;
+  text-align: center;
+}
+
+.focus h3 {
+  font-size: 50px;
+  font-weight: 800;
+}
+
+.focus p {
+  margin: 20px 0px;
+  font-size: 16px;
+  color: #8987a1;
+}
+
+.focus img {
+  border-radius: 50px;
+  margin: 20px auto;
+}
+
 /* touch styles */
 
 .touch {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin: 100px 150px;
+  margin: 80px 150px;
   padding: 70px 0px;
   gap: 80px;
   background-color: rgba(255, 255, 255, 0.5);
