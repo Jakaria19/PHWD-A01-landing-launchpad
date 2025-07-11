@@ -131,6 +131,60 @@ nav {
   font-size: 20px;
 }
 
+/* users styles */
+
+.users {
+  text-align: center;
+}
+
+.users h3 {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+
+.card-container {
+  display: flex;
+  margin: 0px 150px;
+  gap: 20px;
+}
+
+.card {
+  padding: 25px;
+  text-align: left;
+  border: 0.5px solid rgba(78, 71, 255, 0.1);
+  border-radius: 15px;
+}
+
+.card h4 {
+  margin-bottom: 10px;
+}
+
+.card h4,
+.reviewer {
+  margin-top: 25px;
+}
+
+.reviewer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.avatar {
+  border-radius: 50%;
+}
+
+.reviewer-name {
+  color: #757575;
+  font-size: 16px;
+}
+
+.date {
+  color: #b3b3b3;
+  font-size: 16px;
+}
+
 /* touch styles */
 
 .touch {
@@ -155,6 +209,7 @@ nav {
 
 .form-text input {
   padding: 20px 32px;
+  border: 0.5px solid rgba(78, 71, 255, 0.25);
   border-radius: 10px;
   width: 500px;
   margin-bottom: 20px;
@@ -162,6 +217,7 @@ nav {
 
 .form-text textarea {
   padding: 20px 32px;
+  border: 0.5px solid rgba(78, 71, 255, 0.25);
   border-radius: 10px;
   width: 500px;
   margin-bottom: 20px;
